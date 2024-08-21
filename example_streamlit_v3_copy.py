@@ -26,7 +26,7 @@ def setup_database():
 def logout():
     for key in list(st.session_state.keys()):
         del st.session_state[key]
-    st.experimental_rerun()
+    st.rerun()
 
 
 def register_user(username, password):
